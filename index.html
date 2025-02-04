@@ -48,13 +48,13 @@
                           <h2 class="card-title">Rectangle</h2>
                           <p>area = w x l</p>
                           <div>
-                            <input class="w-20 text-2xl p-2 rounded-sm bg-zinc-300" type="text" placeholder="w">
+                            <input id="rectangle-width" class="w-20 text-2xl p-2 rounded-sm bg-zinc-300" type="text" placeholder="w">
                             <span class="mr-4 ml-2">cm</span>
-                            <input class="w-20 text-2xl p-2 rounded-sm bg-zinc-300" type="text" placeholder="l">
+                            <input id="rectangle-length" class="w-20 text-2xl p-2 rounded-sm bg-zinc-300" type="text" placeholder="l">
                             <span>cm</span>
                           </div>
                           <div class="card-actions justify-end">
-                            <button class="btn btn-primary w-full">Calculate</button>
+                            <button onclick="rectangleCalculate()" class="btn btn-primary w-full">Calculate</button>
                           </div>
                         </div>
                       </div>
@@ -102,6 +102,7 @@
             </div>
         </div>
     </main>
-    <script src="tringleCalculate.js"></script>
+    <script src="script/triangleCalculate.js"></script>
+    <script src="script/rectangleCalculate.js"></script>
 </body>
 </html>
