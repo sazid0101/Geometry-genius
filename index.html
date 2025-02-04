@@ -69,13 +69,13 @@
                           <h2 class="card-title">Parallelogram</h2>
                           <p>area =  b x h</p>
                           <div>
-                            <input class="w-20 text-2xl p-2 rounded-sm bg-zinc-300" type="text" placeholder="b">
+                            <input id="Parallelogram-base" class="w-20 text-2xl p-2 rounded-sm bg-zinc-300" type="text" placeholder="b">
                             <span class="mr-4 ml-2">cm</span>
-                            <input class="w-20 text-2xl p-2 rounded-sm bg-zinc-300" type="text" placeholder="h">
+                            <input id="Parallelogram-height" class="w-20 text-2xl p-2 rounded-sm bg-zinc-300" type="text" placeholder="h">
                             <span>cm</span>
                           </div>
                           <div class="card-actions justify-end">
-                            <button class="btn btn-primary w-full">Calculate</button>
+                            <button onclick="ParallelogramCalculate()" class="btn btn-primary w-full">Calculate</button>
                           </div>
                         </div>
                       </div>
@@ -104,5 +104,6 @@
     </main>
     <script src="script/triangleCalculate.js"></script>
     <script src="script/rectangleCalculate.js"></script>
+    <script src="script/parallelogramCalculate.js"></script>
 </body>
 </html>
