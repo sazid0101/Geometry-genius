@@ -16,10 +16,10 @@
         <div class="flex flex-col md:flex-row">
             <!--shape card container-->
             <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 m-4"> 
-                <!--card 1-->
-                <div class="card bg-base-100 w-80 shadow-xl">
+                      <!--card 1-->
+                      <div class="card bg-base-100 w-80 shadow-xl">
                     <figure>
-                      <img
+                      <img class="w-60 h-25 p-5"
                         src="./images/triangle.png"
                         alt="Shoes" />
                     </figure>
@@ -27,35 +27,60 @@
                       <h2 class="card-title">Triangle</h2>
                       <p>area = 0.5 x b x h</p>
                       <div>
-                        <input class="w-20 text-2xl p-2 rounded-sm" type="text" placeholder="b">
+                        <input id="triangle-base" class="w-20 text-2xl p-2 rounded-sm bg-zinc-300" type="text" placeholder="b">
                         <span class="mr-4 ml-2">cm</span>
-                        <input class="w-20 text-2xl p-2 rounded-sm " type="text" placeholder="h">
+                        <input id="triangle-height" class="w-20 text-2xl p-2 rounded-sm bg-zinc-300" type="text" placeholder="h">
                         <span>cm</span>
                       </div>
                       <div class="card-actions justify-end">
-                        <button class="btn btn-primary w-full">Calculate</button>
+                        <button onclick="triangleCalculate()" class="btn btn-primary w-full">Calculate</button>
                       </div>
                     </div>
-                  </div>
+                      </div>
                       <!--card 2-->
-                      
-                      <!--card 3-->
                       <div class="card bg-base-100 w-80 shadow-xl">
                         <figure>
-                          <img
-                            src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                          <img class="w-60 h-25 p-5"
+                            src="./images/rectangle.png"
                             alt="Shoes" />
                         </figure>
                         <div class="card-body">
-                          <h2 class="card-title">Shoes!</h2>
-                          <p>If a dog chews shoes whose shoes does he choose?</p>
+                          <h2 class="card-title">Rectangle</h2>
+                          <p>area = w x l</p>
+                          <div>
+                            <input class="w-20 text-2xl p-2 rounded-sm bg-zinc-300" type="text" placeholder="w">
+                            <span class="mr-4 ml-2">cm</span>
+                            <input class="w-20 text-2xl p-2 rounded-sm bg-zinc-300" type="text" placeholder="l">
+                            <span>cm</span>
+                          </div>
                           <div class="card-actions justify-end">
-                            <button class="btn btn-primary">Buy Now</button>
+                            <button class="btn btn-primary w-full">Calculate</button>
+                          </div>
+                        </div>
+                      </div>
+                      <!--card 3-->
+                      <div class="card bg-base-100 w-80 shadow-xl">
+                        <figure>
+                          <img class="w-60 h-25 p-5"
+                            src="./images/parallelogram.png"
+                            alt="Shoes" />
+                        </figure>
+                        <div class="card-body">
+                          <h2 class="card-title">Parallelogram</h2>
+                          <p>area =  b x h</p>
+                          <div>
+                            <input class="w-20 text-2xl p-2 rounded-sm bg-zinc-300" type="text" placeholder="b">
+                            <span class="mr-4 ml-2">cm</span>
+                            <input class="w-20 text-2xl p-2 rounded-sm bg-zinc-300" type="text" placeholder="h">
+                            <span>cm</span>
+                          </div>
+                          <div class="card-actions justify-end">
+                            <button class="btn btn-primary w-full">Calculate</button>
                           </div>
                         </div>
                       </div>
                       <!--card 4-->
-                      <div class="card bg-base-100 w-80 shadow-xl">
+                      <!-- <div class="card bg-base-100 w-80 shadow-xl">
                         <figure>
                           <img
                             src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
@@ -68,7 +93,7 @@
                             <button class="btn btn-primary">Buy Now</button>
                           </div>
                         </div>
-                      </div>
+                      </div> -->
             </div>
             <!--Area calculation-->
             <div class="w-72 border-2 border-gray-700 rounded-md">
@@ -77,6 +102,6 @@
             </div>
         </div>
     </main>
-    
+    <script src="tringleCalculate.js"></script>
 </body>
 </html>
