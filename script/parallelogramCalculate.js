@@ -2,6 +2,7 @@ function ParallelogramCalculate(){
     const base = getInputValue("Parallelogram-base")
     const height = getInputValue("Parallelogram-height")
     
+    // equation
     const area = base * height;
     setArea("parallelogram-area", area)
 
